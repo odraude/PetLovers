@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PetLovers</string>
+    <string name="texto_boton_click">Click</string>
+    <string name="texto_titulo">Hello world!</string>
 </resources>
