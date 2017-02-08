@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,24 +10,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.educarod.petlovers.MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/texto_titulo" />
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" >
 
-    <Button
-        android:id="@+id/btnMiBoton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTitulo"
-        android:text="@string/texto_boton_click"
-        android:theme="@style/MiBotonRaised" />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sflMiIndicadorRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ListView
+                android:id="@+id/lvMiLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabStar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_stars_black_48dp"
-        android:layout_below="@+id/btnMiBoton" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_titulo"
+            android:layout_below="@+id/sflMiIndicadorRefresh"/>
+
+        <Button
+            android:id="@+id/btnMiBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitulo"
+            android:text="@string/texto_boton_click"
+            android:theme="@style/MiBotonRaised" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stars_black_48dp"
+            android:layout_below="@+id/btnMiBoton" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

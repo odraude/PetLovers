@@ -2,4 +2,12 @@
     <string name="app_name">PetLovers</string>
     <string name="texto_boton_click">Click</string>
     <string name="texto_titulo">Hello world!</string>
+    <string name="mensaje">Favorito :)</string>
+    <string name="snackbar_accion">Acción</string>
+    <string-array name="pets">
+        <item>Perros</item>
+        <item>Gatos</item>
+        <item>Conejos</item>
+        <item>Cuyos</item>
+    </string-array>
 </resources>
