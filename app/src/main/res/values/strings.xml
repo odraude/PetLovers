@@ -10,4 +10,7 @@
         <item>Conejos</item>
         <item>Cuyos</item>
     </string-array>
+    <string name="titulo_card_view">Android 5.0</string>
+    <string name="descripcion_card_view">Esta es la versión en la que se incluyó Material Design,
+    Android Lollipop</string>
 </resources>
